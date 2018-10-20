@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class QuoteComponent implements OnInit {
 
+  isFavourite = false;
+
   constructor() { }
 
   ngOnInit() {
