@@ -1,16 +1,29 @@
-:host {
-    display: block;
-    border: 1px solid black;
+.container {
+    margin: auto;
+    margin-top: 50px;
+    text-align: center;
+    height: 60px;
+
 }
 
-:host(.favourite) {
-    border: 3px solid red;
+.spinner {
+    display: inline-block;
+    font-size: 32px;
+    animation: loading 1s linear 0s alternate-reverse infinite;
 }
 
-h1 {
-    color: red;
-}
-
-p {
-    font-weight: bold;
+@keyframes loading {
+    0% {
+        margin-left: 100px;
+        margin-right: 0px;
+        margin-bottom: 0px;
+    }
+    50% {
+        margin-bottom: 30px;
+    }
+    100% {
+        margin-left: 0px;
+        margin-right: 100px;
+        margin-bottom: 0px;
+    }
 }
